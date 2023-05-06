@@ -1,0 +1,30 @@
+.pad-active {
+  border-radius: 8px;
+  box-shadow: inset 1px 1px 3px #000000cc;
+  height: 97px;
+  width: 97px;
+  text-align: center;
+}
+
+.pad-rectangle {
+  border-radius: 8px;
+  height: 93px;
+  left: 2px;
+  position: relative;
+  top: 2px;
+  width: 93px;
+}
+.soundNum {
+  /* Align to center and change color to black on active === true*/
+  text-align: center;
+  -webkit-text-stroke: 1px #566a57;
+  pointer-events: none;
+  font-family: "IBM Plex Mono", Helvetica;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: normal;
+  position: relative;
+  top: -63px;
+  left: -3px;
+}

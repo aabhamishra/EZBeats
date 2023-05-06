@@ -1,0 +1,8 @@
+.main {
+  display: flex;
+  flex-direction: row;
+  background-color: "#F6F3EE";
+  justify-content: center; 
+  overflow-x: "scroll";
+    
+  }

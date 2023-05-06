@@ -1,0 +1,454 @@
+.frame-frame-wrapper {
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.frame-frame {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border: 1px none;
+  height: 999px;
+  width: 100%;
+}
+
+.frame-overlap {
+  background-color: #566a57;
+  border-radius: 40px;
+  box-shadow: inset 4px 4px 1px #ffffff08, 40px 54px 84px #00000073, inset -4px -3px 3px #0000005c;
+  height: 987px;
+  position: relative;
+  top: 14px;
+  width: 1344px;
+  align-self: center;
+}
+
+
+.frame-overlap-group14 {
+  display: flex;
+  flex-direction: column;
+  background-color: #0f1014;
+  border: 18px solid;
+  border-color: #000000;
+  border-radius: 22px;
+  height: 314px;
+  left: 27px;
+  position: relative;
+  top: 28px;
+  width: 1289px;
+}
+
+.sample-preview {
+  background-color: #0f1014;
+  border-radius: 5px;
+  height: 328px;
+  left: 658px;
+  position: relative;
+  top: 183px;
+  width: 341px;
+}
+
+.sample-sound-btn {
+  height: 50px;
+  left: 276px;
+  position: absolute;
+  top: 12px;
+  width: 52px;
+}
+
+.sample-sound-circle {
+  background-color: #a1a2a6;
+  border-radius: 23.97px;
+  box-shadow: inset 2px 2px 1px -1px #bbbdc7, inset -1px -1px 1px #2c2929cc;
+  height: 48px;
+  left: 2px;
+  position: relative;
+  top: 1px;
+  width: 48px;
+}
+
+.sample-sound-icon {
+  background-image: url("../../../img/sample_sound.png");
+  background-size: 28px;
+  height: 26px;
+  left: 12px;
+  mix-blend-mode: darken;
+  object-fit: fill;
+  position: absolute;
+  top: 12px;
+  width: 28px;
+}
+
+.frame-group {
+  height: 145px;
+  left: 18px;
+  position: absolute;
+  top: 21px;
+  width: 164px;
+}
+
+.frame-text-wrapper-28 {
+  color: #ffffff;
+  font-family: "IBM Plex Mono", Helvetica;
+  font-size: 16px;
+  font-weight: 300;
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 0;
+}
+
+.frame-text-wrapper-29 {
+  color: #ffffff;
+  font-family: "IBM Plex Mono", Helvetica;
+  font-size: 16px;
+  font-weight: 300;
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 31px;
+}
+
+.frame-text-wrapper-30 {
+  color: #ffffff;
+  font-family: "IBM Plex Mono", Helvetica;
+  font-size: 16px;
+  font-weight: 300;
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 124px;
+}
+
+.frame-text-wrapper-31 {
+  color: #ffffff;
+  font-family: "IBM Plex Mono", Helvetica;
+  font-size: 16px;
+  font-weight: 300;
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 62px;
+}
+
+.frame-text-wrapper-32 {
+  color: #ffffff;
+  font-family: "IBM Plex Mono", Helvetica;
+  font-size: 16px;
+  font-weight: 300;
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 89px;
+}
+
+.frame-step-buttons {
+  align-items: flex-start;
+  position: relative;
+  display: flex;
+  gap: 27px;
+  left: 42px;
+  position: absolute;
+  top: 380px;
+  width: fit-content;
+}
+
+.effect-buttons {
+  height: 328px;
+  left: 550px;
+  position: absolute;
+  top: 499px;
+  width: 96px;
+}
+
+.effect-delay {
+  position: absolute;
+  top: 10;
+}
+
+.effect-reverb {
+  position: absolute;
+  top: 71px;
+}
+
+.effect-3 {
+  position: absolute;
+  top: 142px;
+}
+
+.revert-effects {
+  position: absolute;
+  top: 275px;
+}
+
+.track-play-icon {
+  background-image: url("../../../img/play.png");
+  pointer-events: none;
+  background-size: 43px;
+  width: 43px;
+  height: 43px;
+  top: 11px;
+  left: 17px;
+  position: absolute;
+}
+
+.track-play-button {
+  height: 95px;
+  left: 918px;
+  position: absolute;
+  top: 862px;
+  width: 77px;
+}
+
+.track-clear-button {
+  height: 95px;
+  left: 683px;
+  position: absolute;
+  top: 862px;
+  width: 77px;
+}
+
+.track-clear-icon {
+  background-image: url("../../../img/reset.png");
+  pointer-events: none;
+  background-size: 50px;
+  height: 50px;
+  width: 50px;
+  top: 9px;
+  left: 12px;
+  position: absolute;
+}
+
+.track-pause-button {
+  height: 95px;
+  left: 683px;
+  position: absolute;
+  top: 862px;
+  width: 77px;
+}
+
+.track-pause-icon {
+  background-image: url("../../../img/pause.png");
+  pointer-events: none;
+  background-size: 50px;
+  height: 50px;
+  width: 50px;
+  top: 9px;
+  left: 12px;
+  position: absolute;
+}
+
+.track-metronome-button {
+  height: 95px;
+  left: 800px;
+  position: absolute;
+  top: 862px;
+  width: 77px;
+}
+
+.track-metronome-icon {
+  background-image: url("../../../img/metronome.png");
+  pointer-events: none;
+  background-size: 53px;
+  height: 53px;
+  width: 53px;
+  top: 8px;
+  left: 10px;
+  position: absolute;
+}
+
+.track-record-button {
+  height: 94px;
+  left: 558px;
+  position: absolute;
+  top: 862px;
+  width: 79px;
+}
+
+.track-record-icon {
+  background-image: url("../../../img/record.png");
+  pointer-events: none;
+  background-size: 145px;
+  height: 145px;
+  width: 145px;
+  top: -38px;
+  left: -35px;
+  position: absolute;
+}
+
+.frame-sound-pads {
+  height: 323px;
+  left: 42px;
+  position: absolute;
+  top: 617px;
+  width: 445px;
+}
+
+.sound-pad-1 {
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+
+.sound-pad-2 {
+  left: 118px;
+  position: absolute;
+  top: 0;
+}
+
+.sound-pad-3 {
+  left: 231px;
+  position: absolute;
+  top: 0;
+  
+}
+
+.sound-pad-4 {
+  left: 348px;
+  position: absolute;
+  top: 0;
+}
+
+.sound-pad-5 {
+  left: 0;
+  position: absolute;
+  top: 113px;
+}
+
+.sound-pad-6 {
+  left: 116px;
+  position: absolute;
+  top: 113px;
+}
+
+.sound-pad-7 {
+  left: 232px;
+  position: absolute;
+  top: 113px;
+}
+
+.sound-pad-8 {
+  left: 348px;
+  position: absolute;
+  top: 113px;
+}
+
+.sound-pad-9 {
+  left: 0;
+  position: absolute;
+  top: 226px;
+}
+
+.sound-pad-10 {
+  left: 116px;
+  position: absolute;
+  top: 226px;
+}
+
+.sound-pad-11 {
+  left: 232px;
+  position: absolute;
+  top: 226px;
+}
+
+.sound-pad-12 {
+  left: 348px;
+  position: absolute;
+  top: 226px;
+}
+
+.frame-volume-slider {
+  height: 430px;
+  left: 1080px;
+  position: absolute;
+  top: 499px;
+  width: 82px;
+}
+
+.frame-text-wrapper-46 {
+  color: #000000;
+  font-family: "Inter", Helvetica;
+  font-size: 18px;
+  font-weight: 700;
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 403px;
+  width: 80px;
+}
+
+.frame-tempo-slider {
+  height: 429px;
+  left: 1188px;
+  position: absolute;
+  top: 500px;
+  width: 68px;
+}
+
+.frame-text-wrapper-47 {
+  color: #000000;
+  font-family: "Inter", Helvetica;
+  font-size: 18px;
+  font-weight: 700;
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 402px;
+  width: 66px;
+}
+
+.frame-speaker-circles {
+  /* background-image: url(../../../../assets/img/speaker-circles.png); */
+  /* object-fit: fill; */
+  height: 87px;
+  left: 44px;
+  position: absolute;
+  top: 501px;
+  width: 441px;
+}
+
+.frame-vector-1 {
+  /* background-image: url(../../../img/vector-3.svg); */
+  height: 12px;
+  left: 68px;
+  position: absolute;
+  top: 454px;
+  width: 248px;
+}
+
+.frame-vector-2 {
+  /* background-image: url(../../../img/vector-3.svg); */
+  height: 12px;
+  left: 384px;
+  position: absolute;
+  top: 454px;
+  width: 248px;
+}
+
+.frame-vector-3 {
+  /* background-image: url(../../../img/vector-3.svg); */
+  height: 12px;
+  left: 705px;
+  position: absolute;
+  top: 454px;
+  width: 248px;
+}
+
+.frame-vector-4 {
+  /* background-image: url(../../../img/vector-6.svg); */
+  height: 12px;
+  left: 1025px;
+  position: absolute;
+  top: 454px;
+  width: 248px;
+}

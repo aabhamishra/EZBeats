@@ -1,0 +1,62 @@
+version: "3.9"
+
+services:
+  mysql-db:
+    image: mysql/mysql-server:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: sound42
+      MYSQL_DATABASE: sound_db
+      MYSQL_ROOT_HOST: '%'
+    ports:
+      - "3306:3306"
+    volumes:
+      - db-data:/var/lib/mysql
+    networks:
+      - my-network
+    restart: always
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "root", "--password=sound42"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  spring-backend:
+    image: just737/cs506-digital-sampler
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysql-db:3306/sound_db?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: sound42
+    ports:
+      - "8080:8080"
+    networks:
+      - my-network
+    depends_on:
+      mysql-db:
+        condition: service_healthy
+    restart: always
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin:latest
+    environment:
+      PMA_HOST: mysql-db
+      PMA_USER: root
+      PMA_PASSWORD: sound42
+    ports:
+      - "8081:80"
+    networks:
+      - my-network
+    depends_on:
+      - mysql-db
+    restart: always
+  
+  ui:
+    build: .
+    ports:
+      - "80:3000"
+
+networks:
+  my-network:
+    driver: bridge
+
+volumes:
+  db-data:
