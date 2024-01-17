@@ -93,7 +93,6 @@ export default function SamplerRegister() {
                     </Button>
                 </Col>
             </Row>
-
         </Form>
     </>
 

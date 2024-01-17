@@ -4,7 +4,6 @@ import "./style.css";
 export const SliderComponent = (props) => {
 
   const setVal = (toVal) => {
-    // console.log(toVal);
     props.setVal(toVal);
   }
 

@@ -29,24 +29,10 @@ export const SamplerUI = () => {
   const HandleKeyDown = e => {
       const bindingIndex = keyBindings.findIndex(binding => binding === e.key);
       if(bindingIndex === -1) return;
-      console.log(`Playing: ${bindingIndex}`);
       audioEngine.getTracks()[bindingIndex].getSamplePlayer().play();
   }
 
   const [stepStats, setStepStats] = useContext(stepStatsContext);
-
-  useEffect(() => {
-    console.log("curr sample:", selectedSample);
-  }, [selectedSample])
-
-  useEffect(() => {
-    console.log(stepStats);
-  }, [stepStats])
-
-  // playback position monitoring
-  useEffect(() => {
-    console.log(syncContext.getPlaybackPosition());
-  }, []);
 
   // playback control
   const playCallback = () => {
@@ -152,7 +138,7 @@ export const SamplerUI = () => {
           </div>
         </div>
         <div className={"effect-buttons"}>
-          <div className={"effect-delay"} onClick={() => { console.log("effect 1 pressed") }}>
+          <div className={"effect-delay"}>
             <Effect active={false} text="Delay" />
           </div>
           <div className={"effect-reverb"}>
